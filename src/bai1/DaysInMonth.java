@@ -2,7 +2,7 @@ package bai1;
 
 import java.util.Scanner;
 
-public class daysInMonth {
+public class DaysInMonth {
     public static void main(String[] args) {
         String daysInMonth;
         Scanner scanner = new Scanner(System.in);
