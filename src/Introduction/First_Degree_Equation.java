@@ -1,4 +1,4 @@
-package bai1;
+package Introduction;
 import java.util.Scanner;
 public class First_Degree_Equation {
 public static void main(String[] ages){
