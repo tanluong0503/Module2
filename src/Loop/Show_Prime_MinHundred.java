@@ -13,7 +13,6 @@ public class Show_Prime_MinHundred {
             }
             if (count == 2)
                 System.out.print(i + " ");
-
         }
     }
 }
