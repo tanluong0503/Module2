@@ -1,4 +1,4 @@
-package DSA;
+package DSA.MyList;
 
 import java.util.Arrays;
 

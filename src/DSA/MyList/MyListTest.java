@@ -1,4 +1,6 @@
-package DSA;
+package DSA.MyList;
+
+import DSA.MyList.MyList;
 
 public class MyListTest {
     public static void main(String[] args) {
