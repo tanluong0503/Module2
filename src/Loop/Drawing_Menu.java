@@ -7,7 +7,7 @@ public class Drawing_Menu {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int choice = -1;
-        System.out.println("Menu");
+        System.out.println("menu.Menu");
         System.out.println("1. Draw the triangle");
         System.out.println("2. Draw the square");
         System.out.println("3. Draw the rectangle");

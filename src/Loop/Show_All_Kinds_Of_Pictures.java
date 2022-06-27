@@ -7,7 +7,7 @@ public class Show_All_Kinds_Of_Pictures {
         int choice = -1;
         Scanner input = new Scanner(System.in);
         while (choice != 0) {
-            System.out.println("Menu");
+            System.out.println("menu.Menu");
             System.out.println("1. Print the rectangle");
             System.out.println("2. Print the square triangle ");
             System.out.println("3. Print isosceles triangle ");
