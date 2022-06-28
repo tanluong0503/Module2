@@ -1,22 +1,31 @@
 package DSA.MyList;
 
-import DSA.MyList.MyList;
-
 public class MyListTest {
     public static void main(String[] args) {
-        MyList<Integer> listInteger = new MyList<Integer>();
-        listInteger.add(1);
-        listInteger.add(2);
-        listInteger.add(3);
-        listInteger.add(3);
-        listInteger.add(4);
+        MyList<String> listNames = new MyList<>(10);
+        listNames.add("Luong");
+        listNames.add("Bo");
+        listNames.add("Tri");
+        listNames.add("Tiên");
+        listNames.add(3, "Anh Khoa");
+        //  listNames.clear();
+        listNames.printMyList();
+        listNames.remove(3);
+        listNames.printMyList();
 
 
-        System.out.println("element 4: " + listInteger.get(4));
-        System.out.println("element 1: " + listInteger.get(1));
-        System.out.println("element 2: " + listInteger.get(2));
-
-        listInteger.get(-1);
-        System.out.println("element -1: " + listInteger.get(-1));
+        MyList<Number> listNumber = new MyList<>(10);
+        listNumber.add(1);
+        listNumber.add(2);
+        listNumber.add(3);
+        listNumber.add(4);
+        listNumber.add(5);
+        listNumber.printMyList();
+        if (listNumber.contains(3)) {
+            System.out.println("Yes!");
+        } else System.out.println("NO!");
+        if (listNumber.contains(6)) {
+            System.out.println("Yes!");
+        } else System.out.println("NO!");
     }
 }
