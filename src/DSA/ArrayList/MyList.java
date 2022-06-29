@@ -1,4 +1,4 @@
-package DSA.MyList;
+package DSA.ArrayList;
 
 public class MyList<E> {
     private int size = 0;
@@ -32,8 +32,7 @@ public class MyList<E> {
 
     private void checkIndex(int index) {
         if (index < 0 || index >= size)
-            throw new IndexOutOfBoundsException
-                    ("index " + index + " out of bounds");
+            System.out.println("index " + index + " out of bounds");
     }
 
     public E remove(int index) {
@@ -88,7 +87,7 @@ public class MyList<E> {
         if (index >= size || index < 0) {
             throw new IndexOutOfBoundsException("Index : " + index + ",size : " + index);
         }
-        return (E) elements[index]; // vi moi element la  1 object
+        return (E) elements[index];
     }
 
     public void printMyList() {
