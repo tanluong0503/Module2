@@ -7,12 +7,12 @@ public class AngryBird extends Animal implements Flyable {
 
     @Override
     public void fly() {
-        System.out.println("bay bang cach dap canh");
+        System.out.println("bay bang cach dap canh ");
     }
 
     @Override
     public String toString() {
-        System.out.print(getName()+" is a bird ");
+        System.out.print(getName()+" is a bird \n");
         fly();
         return super.toString();
     }

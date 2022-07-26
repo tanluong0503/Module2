@@ -7,7 +7,7 @@ public class Nemo extends Animal implements Swimable{
 
     @Override
     public void swim() {
-        System.out.println("Boi");
+        System.out.println("Boi bang duoi va vay");
     }
 
     @Override
