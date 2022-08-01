@@ -4,7 +4,7 @@ public abstract class Employee {
     private int id;
     private String fullName;
     private String birthDay;
-    private int phone;
+    private String phone;
     private String email;
     private String employee_type;
     private String employee_count;
@@ -16,7 +16,14 @@ public abstract class Employee {
     public Employee() {
     }
 
-    public Employee(int id, String fullName, String birthDay, int phone, String email, String employee_type, String employee_count) {
+    public Employee(int id, String fullName, String phone, String email) {
+        this.id = id;
+        this.fullName = fullName;
+        this.phone = phone;
+        this.email = email;
+    }
+
+    public Employee(int id, String fullName, String birthDay, String phone, String email, String employee_type, String employee_count, int certificatedID, String certificateName, String certificateRank, String certificatedDate) {
         this.id = id;
         this.fullName = fullName;
         this.birthDay = birthDay;
@@ -24,9 +31,6 @@ public abstract class Employee {
         this.email = email;
         this.employee_type = employee_type;
         this.employee_count = employee_count;
-    }
-
-    public Employee(int certificatedID, String certificateName, String certificateRank, String certificatedDate) {
         CertificatedID = certificatedID;
         CertificateName = certificateName;
         CertificateRank = certificateRank;
@@ -57,11 +61,11 @@ public abstract class Employee {
         this.birthDay = birthDay;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return phone;
     }
 
-    public void setPhone(int phone) {
+    public void setPhone(String phone) {
         this.phone = phone;
     }
 
@@ -123,19 +127,18 @@ public abstract class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ", fullName='" + fullName + '\'' +
-                ", birthDay='" + birthDay + '\'' +
-                ", phone=" + phone +
-                ", email='" + email + '\'' +
-                ", employee_type='" + employee_type + '\'' +
-                ", employee_count='" + employee_count + '\'' +
-                ", CertificatedID=" + CertificatedID +
-                ", CertificateName='" + CertificateName + '\'' +
-                ", CertificateRank='" + CertificateRank + '\'' +
-                ", CertificatedDate='" + CertificatedDate + '\'' +
-                '}';
+        return "ID: " + id +
+                ", Full Name: " + fullName +
+                ", Birth Day: " + birthDay +
+                ", Phone: " + phone +
+                ", Email: " + email +
+                ", Employee Type: " + employee_type +
+                ", Employee Count: " + employee_count +
+                ", Certificated ID: " + CertificatedID +
+                ", Certificate Name: " + CertificateName +
+                ", Certificate Rank: " + CertificateRank +
+                ", Certificated Date: " + CertificatedDate
+                ;
     }
 
     public abstract void showMe();
