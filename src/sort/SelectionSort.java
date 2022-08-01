@@ -1,8 +1,8 @@
-package Demo;
+package sort;
+
+import Demo.Student;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 
 public class SelectionSort {

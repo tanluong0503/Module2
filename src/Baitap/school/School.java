@@ -20,7 +20,14 @@ public class School {
         return this.students.stream().filter(student -> student.getAge() == 20).collect(Collectors.toList());
     }
 
-    public long countStudent23YearOldInDN() {
-        return this.students.stream().filter(student -> student.getAge() == 23 && student.getHometown().equals("DN")).count();
+    public List<Student> countStudent23YearOldInDN() {
+        return this.students.stream().filter(student -> student.getAge() == 23 && student.getHometown().equals("DN")).collect(Collectors.toList());
+    }
+
+    @Override
+    public String toString() {
+        return "School{" +
+                "students=" + students +
+                '}';
     }
 }

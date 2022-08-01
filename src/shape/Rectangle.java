@@ -1,4 +1,6 @@
-package Abstract_Interface;
+package shape;
+
+import shape.Shape;
 
 public class Rectangle extends Shape {
     private double width = 1.0;

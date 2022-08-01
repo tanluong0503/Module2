@@ -1,4 +1,6 @@
-package Abstract_Interface;
+package shape;
+
+import shape.Rectangle;
 
 public class RectangleTest {
     public static void main(String[] args) {

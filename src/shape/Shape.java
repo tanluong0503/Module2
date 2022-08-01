@@ -1,4 +1,4 @@
-package Abstract_Interface;
+package shape;
 
 public class Shape {
     private String color = "green";
